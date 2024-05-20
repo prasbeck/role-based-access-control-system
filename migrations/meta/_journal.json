@@ -1,0 +1,55 @@
+{
+  "version": "6",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1716135612755,
+      "tag": "0000_nervous_the_watchers",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1716136345599,
+      "tag": "0001_faulty_sentinel",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1716136723114,
+      "tag": "0002_fixed_rocket_raccoon",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1716138121754,
+      "tag": "0003_big_hydra",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1716138231478,
+      "tag": "0004_neat_sunspot",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1716138620443,
+      "tag": "0005_fresh_phil_sheldon",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1716211755943,
+      "tag": "0006_swift_thunderbird",
+      "breakpoints": true
+    }
+  ]
+}

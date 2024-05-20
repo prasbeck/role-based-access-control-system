@@ -1,0 +1,140 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "User API",
+    "collectionId": "018b6bd2-8e29-4072-86b0-b34a7e194c9f",
+    "dateExported": "2024-05-20T18:34:29.481Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e6599dc4-12b6-4d80-94b8-78d395bacf22",
+            "colId": "018b6bd2-8e29-4072-86b0-b34a7e194c9f",
+            "containerId": "",
+            "name": "Get applications",
+            "url": "http://0.0.0.0:3000/api/applications",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-20T13:43:11.222Z",
+            "modified": "2024-05-20T13:43:11.222Z",
+            "headers": []
+        },
+        {
+            "_id": "868dec7c-7317-45d6-8955-c6c153b2f981",
+            "colId": "018b6bd2-8e29-4072-86b0-b34a7e194c9f",
+            "containerId": "",
+            "name": "Create application",
+            "url": "http://0.0.0.0:3000/api/applications",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-20T13:43:21.656Z",
+            "modified": "2024-05-20T17:54:56.105Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Demo\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "1d11405f-78dc-41e5-b7e9-ae2eda7ad06c",
+            "colId": "018b6bd2-8e29-4072-86b0-b34a7e194c9f",
+            "containerId": "",
+            "name": "Create user",
+            "url": "http://0.0.0.0:3000/api/users",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-20T14:32:04.581Z",
+            "modified": "2024-05-20T17:57:32.455Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test2@example.com\",\n  \"password\":\"123456\",\n  \"name\":\"John Doe\",\n  \"initialUser\": true,\n  \"applicationId\": \"{{applicationId}}\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "52856851-9566-447b-8acb-19bc26677f0a",
+            "colId": "018b6bd2-8e29-4072-86b0-b34a7e194c9f",
+            "containerId": "",
+            "name": "Login user",
+            "url": "http://0.0.0.0:3000/api/users/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-05-20T16:29:32.032Z",
+            "modified": "2024-05-20T18:18:41.565Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"test3@example.com\",\n  \"password\":\"123456\",\n  \"applicationId\": \"{{applicationId}}\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "70724dd2-d596-4edc-b758-72339d193d79",
+            "colId": "018b6bd2-8e29-4072-86b0-b34a7e194c9f",
+            "containerId": "",
+            "name": "Create role",
+            "url": "http://0.0.0.0:3000/api/roles",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-05-20T17:10:08.481Z",
+            "modified": "2024-05-20T18:05:05.334Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{authorization}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"permissions\":[\n    \"post:delete\",\n    \"post:edit-own\"\n    ],\n    \"name\": \"Post moderator\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c558b22a-fb66-4e09-82a4-3308c2a8c3e7",
+            "colId": "018b6bd2-8e29-4072-86b0-b34a7e194c9f",
+            "containerId": "",
+            "name": "Assign Role to user",
+            "url": "http://0.0.0.0:3000/api/users/roles",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-05-20T17:31:29.460Z",
+            "modified": "2024-05-20T18:16:02.703Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{authorization}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\":\"{{user2Id}}\",\n  \"roleId\":\"{{roleId}}\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ef11634c-90e4-48d7-810d-3a345aec00e5",
+            "colId": "018b6bd2-8e29-4072-86b0-b34a7e194c9f",
+            "containerId": "",
+            "name": "Create user 2",
+            "url": "http://0.0.0.0:3000/api/users",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-05-20T18:09:28.331Z",
+            "modified": "2024-05-20T18:10:55.123Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test3@example.com\",\n  \"password\":\"123456\",\n  \"name\":\"Jane wills\",\n  \"applicationId\": \"{{applicationId}}\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://0.0.0.0:3000"
+        }
+    },
+    "ref": "kFXlDNVA5ZDceUJlhLiHLGxCu0NLWKtGsj384Vh4m5r0oXovxkjwZibiIIStQK7krE3sjKQ71_T_CnKoYCaoYQ"
+}
